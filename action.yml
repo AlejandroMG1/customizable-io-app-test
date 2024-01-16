@@ -1,4 +1,4 @@
-name: VTEX IO Test Action
+name: VTEX IO Custom Test Action
 description: Automatically run tests for VTEX IO apps
 inputs:
   testCommand:  # id of input

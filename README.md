@@ -26,7 +26,7 @@ jobs:
         env:
           RUNNER_TEMP: /tmp
 
-      - uses: vtex/action-io-app-test@master
+      - uses: experimentality/customizable-io-app-test@master
 ```
 
 form advance usage you can use the optional inputs testCommands and testedBuilders as follow
@@ -50,7 +50,7 @@ jobs:
         env:
           RUNNER_TEMP: /tmp
 
-      - uses: vtex/action-io-app-test@master
+      - uses: experimentality/customizable-io-app-test@master
         with:
           testedBuilders: node,react #builders names separated with comas
           testCommand: test-coverage,--passWithNoTests #project test command to be executed with it flags separated with comas
