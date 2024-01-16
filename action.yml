@@ -1,5 +1,14 @@
 name: VTEX IO Test Action
 description: Automatically run tests for VTEX IO apps
+inputs:
+  testCommand:  # id of input
+    description: 'Commands to run tests and its flags (e.g. --passWithNoTests) separated by comma, if not provided, the default will be used'
+    required: false
+    default: 'test,--passWithNoTests'
+  testedBuilders:  # id of input
+    description: 'Builders to be tested separated by comma, if not provided all builders will be tested'
+    required: false
+    default: ''
 runs:
   using: docker
   image: Dockerfile
