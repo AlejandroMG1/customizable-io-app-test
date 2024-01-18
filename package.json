@@ -3,24 +3,17 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "start": "node ./lib/index.js",
-    "test": "jest"
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "node_modules",
-      "fixtures"
-    ]
+    "package": "ncc build src/index.js"
   },
   "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^6.0.0",
     "actions-toolkit": "^4.0.0"
   },
   "devDependencies": {
-    "@vtex/prettier-config": "^0.1.4",
     "eslint": "^6.8.0",
-    "eslint-config-vtex": "^12.3.2",
-    "jest": "^25.2.7",
     "prettier": "^2.0.4",
-    "typescript": "^3.8.3"
+    "@vercel/ncc": "^0.38.1"
   }
 }
